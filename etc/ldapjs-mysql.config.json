@@ -1,0 +1,22 @@
+{
+    "ldap": {
+        "address": "0.0.0.0",
+        "port": 389,
+        "rootDn": "cn=root",
+        "rootPassword": "password",
+        "baseDn": "dc=example, dc=com",
+        "peopleOu": "ou=people",
+        "peopleQuery": "select fullname as cn, firstname as givenName, lastname as sn, password as userPassword, email as mail, status as inetuserstatus, username as uid from users username = ?",
+        "passwordCheckClass": "joomlaPassword",
+        "groupOu": "ou=groups",
+        "groupQuery": "select * from groups where username = ?"
+    },
+    "mysql": {
+        "host": "localhost",
+        "port": 3306,
+        "username": "example",
+        "password": "example123",
+        "database": "example",
+        "connectionLimit": 10
+    }
+}
